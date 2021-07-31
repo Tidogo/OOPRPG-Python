@@ -1,16 +1,16 @@
 class Entity :
-    def __init__(self, Name, Level, Strength, Constitution, Dexterity, Health, Defense, Dodge, Crit, AttPower, CritDmgMultiplier) :
-        self.Name = Name
-        self.Level = Level
-        self.Strength = Strength
-        self.Constitution = Constitution
-        self.Dexterity = Dexterity
-        self.Health = Health
-        self.Defense = Defense
-        self.Dodge = Dodge
-        self.Crit = Crit
-        self.AttPower = AttPower
-        self.CritDmgMultiplier = CritDmgMultiplier
+    def __init__(self, name, lvl, str, const, dex, hlth, defense, dodge, crit, attPwr, critDmgMult) :
+        self.Name = name
+        self.Level = lvl
+        self.Strength = str
+        self.Constitution = const
+        self.Dexterity = dex
+        self.Health = hlth
+        self.Defense = defense
+        self.Dodge = dodge
+        self.Crit = crit
+        self.AttPower = attPwr
+        self.CritDmgMultiplier = critDmgMult
     
     def CalcSubStats(self) :
         Defense = 1

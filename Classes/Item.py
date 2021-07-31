@@ -1,7 +1,7 @@
 class Item :
-    def __init__(self, Name, StackLimit, TempBoost, Equippable, Value) :
-        self.Name = Name
-        self.StackLimit = StackLimit
-        self.TempBoost = TempBoost
-        self.Equippable = Equippable
-        self.Value = Value
+    def __init__(self, name, stackLmt, tempBoost, equippable, value) :
+        self.Name = name
+        self.StackLimit = stackLmt
+        self.TempBoost = tempBoost
+        self.Equippable = equippable
+        self.Value = value

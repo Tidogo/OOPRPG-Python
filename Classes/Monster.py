@@ -2,14 +2,14 @@ from Classes.Entity import Entity
 
 
 class Monster(Entity) :
-    def __init__(self) -> None:
-        super().__init__()
+    def __init__(self, diff, init) :
+        super().__init__(self)
         super().CalcSubStats(self)
-        self.LootSeedValue = 0
-        self.ExperienceValue = 0
-        self.RndCashLoot = 0
-        self.Difficulty = 0
-        self.Initiative = 0.0
+        self.LootSeedValue = self.Level * 10
+        self.ExperienceValue = self.Level * 10
+        self.Difficulty = diff
+        self.RndCashLoot = self.level * (10 * self.Difficulty)
+        self.Initiative = init
     
 
 
