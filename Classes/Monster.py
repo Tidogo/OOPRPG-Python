@@ -1,6 +1,7 @@
 from Classes.Entity import Entity
 
 
+#This monster class is a subclass of entity with new attributes essential for the battle mechanic.
 class Monster(Entity) :
     def __init__(self, diff, init) :
         super().__init__(self)

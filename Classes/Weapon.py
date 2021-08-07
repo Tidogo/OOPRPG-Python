@@ -1,6 +1,6 @@
 from Classes.Item import Item
 
-
+#This class is for weapon items. It uses xml data to create new weapons.
 class Weapon(Item) :
     def __init__(self, attpwr, twohanded, intve, critchance, critdmgmod) :
         super().__init__(self)

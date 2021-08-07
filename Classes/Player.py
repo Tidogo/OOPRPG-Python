@@ -1,6 +1,6 @@
 from Classes.Entity import Entity
 
-
+#This class is a subclass of entity that is the representation of the player. Contains numerous new attributes that change via the leveling mechanic, battle mechanic, and items.
 class Player(Entity) :
     def __init__(self, inven, equipped, cash, experience) : 
         super().__init__(self)

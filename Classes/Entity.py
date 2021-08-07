@@ -1,3 +1,4 @@
+#The entity class is a superclass used by Player and Monster subclasses. Contains the attributes shared by both as core elements used in multiple sectors.
 class Entity :
     def __init__(self, name, lvl, str, const, dex, hlth, defense, dodge, crit, attPwr, critDmgMult) :
         self.Name = name
@@ -12,6 +13,7 @@ class Entity :
         self.AttPower = attPwr
         self.CritDmgMultiplier = critDmgMult
     
+    #This method is used to calculate the "substats" dodge, attpower, crit, and critdmgmultiplier. All of these are used in the battle mechanic.
     def CalcSubStats(self) :
         Defense = 1
         tempDex = self.Dexterity
